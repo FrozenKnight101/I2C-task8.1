@@ -1,6 +1,6 @@
 #include <Wire.h> 
 
-int LED = 11; 
+int LED = 2; 
 
 void setup() 
 {
@@ -16,8 +16,8 @@ void event(int total)
 {
   while(Wire.available())
   { 
-    char c = Wire.read(); 
-    digitalWrite(LED, c); 
+    char i = Wire.read(); 
+    digitalWrite(LED, i); 
   }
   
 }
